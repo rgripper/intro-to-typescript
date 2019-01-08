@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { hexToRgb, rgbToHex } from "./color-functions";
+import { hexToRgb, rgbToHex } from "./chapter - function-type/color-functions";
 
 import "./styles.css";
 
