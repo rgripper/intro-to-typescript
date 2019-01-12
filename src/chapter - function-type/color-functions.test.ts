@@ -5,7 +5,7 @@ export let color = {
   g: 0,
   b: 0,
   get hex(): string {
-    return colorFunctions.rgbToHex(this.r, this.g, this.b);
+    return colorFunctions.rgbToHex(this);
   },
   set hex(hex: string) {
     let { r, g, b } = colorFunctions.hexToRgb(hex);
@@ -24,11 +24,11 @@ test("color-functions.js module exports a function rgbToHex", () => {
 });
 
 test('color-functions.js / rgbToHex(255, 0, 0) --> "ff0000"', () => {
-  expect(colorFunctions.rgbToHex(255, 0, 0)).toBe("ff0000");
+  expect(colorFunctions.rgbToHex({ r: 255, g: 0, b: 0 })).toBe("ff0000");
 });
 
 test('color-functions.js / rgbToHex(255, 255, 255) --> "ffffff"', () => {
-  expect(colorFunctions.rgbToHex(255, 255, 255)).toBe("ffffff");
+  expect(colorFunctions.rgbToHex({ r: 255, g: 255, b: 255 })).toBe("ffffff");
 });
 
 test('color-functions.js / hexToRgb("ff0000") -> {r: 255, g: 0, b: 0}', () => {
