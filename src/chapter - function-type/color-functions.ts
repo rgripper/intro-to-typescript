@@ -1,5 +1,7 @@
+type RgbColor = { r: number; g: number; b: number };
+
 //TODO: Implement hexToRgb
-export function hexToRgb(hex: string): { r: number; g: number; b: number } {
+export function hexToRgb(hex: string): RgbColor {
   //F00
   if (hex.length === 3) {
     let hr = hex[0];
@@ -15,7 +17,7 @@ export function hexToRgb(hex: string): { r: number; g: number; b: number } {
 }
 
 //TODO: Implement rgbToHex
-export function rgbToHex(r: number, g: number, b: number): string {
+export function rgbToHex({ r, g, b }: RgbColor): string {
   return [r, g, b]
     .map(rgbCh => Math.max(0, Math.min(255, rgbCh)).toString(16))
     .map(hexCh => (hexCh.length === 1 ? `0${hexCh}` : hexCh))
