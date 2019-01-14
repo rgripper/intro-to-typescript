@@ -17,8 +17,8 @@ Object.keys(PetType).length/2
 //use enum to represent suit
 enum Suit  { Club, Diamond, Heart, Spade }
 //use enum to represent Numberr
-enum CardNumber { Ace, Two, ... , Queen, King }
+enum CardNumber { Ace, Two, Three , Queen, King }
 //use tuple to define card type
 type Card [ Suit, CardNumber ]
 //a card
-let c: Card = [ Suit.Clubs, CardNumber.Seven ]
+let c: Card = [ Suit.Club, CardNumber.Three ]
