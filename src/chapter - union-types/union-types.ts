@@ -20,7 +20,7 @@ const one = convertStringToNumber('one');
 const two = convertStringToNumber('rubbish');
 
 //if (one.isSuccess && two.isSuccess) {
-  const sum = one.value + two.value;
+  const sum = one.value + two.value; // Compiler error: it asks you to put a check for `isSuccess === true` here
   console.log(sum);
 //}
 
