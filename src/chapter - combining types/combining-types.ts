@@ -29,3 +29,11 @@ function isMercenary (military: Military) {
 function canClaimPension (person: Person) {
   return person.age > 60;
 }
+
+console.log(
+  isMercenary(monkeyWithGranade) // `true` - this monkey is definitely a mercenary!
+);
+
+console.log(
+  canClaimPension(monkeyWithGranade) // `false` - this monkey can't claim pension, it's too young!
+);
