@@ -10,6 +10,7 @@ const user_defined: User = {
   avatarUrl: "http://example.com"
 };
 
+// Compiler error: Type 'undefined' is not assignable to type 'string | null'
 const user_undefined: User = {
   id: 5,
   fullName: "Sarah Connor",
@@ -22,6 +23,7 @@ const user_null: User = {
   avatarUrl: null
 };
 
+// Compiler error: Property 'avatarUrl' is required in type 'User_A'
 const user_missing: User = {
   id: 5,
   fullName: "Gary Busey"

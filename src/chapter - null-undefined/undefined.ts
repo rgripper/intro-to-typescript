@@ -16,6 +16,7 @@ const user_a_undefined: User_A = {
   avatarUrl: undefined
 };
 
+// Compiler error: Property 'avatarUrl' is required in type 'User_A'
 const user_a_missing: User_A = {
   id: 5,
   fullName: "Sarah Connor"
