@@ -1,4 +1,4 @@
-type User = {
+export type User = {
   id: number;
   fullName: string;
   avatarUrl: string | null; // `null` is JSON-friendly
