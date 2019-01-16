@@ -11,7 +11,7 @@ Define `Transaction` type - a union of 3 other types: `Auditable`, `Identifiable
 
 ## Fields
 - amount
-- createdBy
+- createdById
 - creationDate
 - currency
 - id
