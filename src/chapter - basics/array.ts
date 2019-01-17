@@ -2,7 +2,7 @@ import { N } from "./alias";
 import { RgbColor } from "./alias";
 
 //in JS, an array can have any array inside
-
+let anyArray: any[] = [1, "2"];
 //adding a type constraint helps us keep content consistent
 const nums: N[] = [1, 2, 3];
 
