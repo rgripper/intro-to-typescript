@@ -10,7 +10,7 @@ type Failure = {
   errorMessage: string;
 }
 
-function convertStringToNumber (input: string): Result  {
+export function convertStringToNumber (input: string): Result  {
   if (input === 'one') return { isSuccess: true, value: 0 }
   else if(input === 'two') return { isSuccess: true, value: 1 }
   else return { isSuccess: false, errorMessage: 'Must be a string!' }

@@ -22,11 +22,11 @@ const monkeyWithGranade: Infantry = {
   rank: 'General'
 }
 
-function isMercenary (military: Military) {
+export function isMercenary (military: Military) {
   return military.country === null;
 }
 
-function canClaimPension (person: Person) {
+export function canClaimPension (person: Person) {
   return person.age > 60;
 }
 

@@ -10,13 +10,13 @@ interface Failure {
   errorMessage: string;
 }
 
-function convertStringToNumber (input: string): Result<number>  {
+export function convertStringToNumber (input: string): Result<number>  {
   if (input === 'one') return { isSuccess: true, value: 0 }
   else if(input === 'two') return { isSuccess: true, value: 1 }
   else return { isSuccess: false, errorMessage: 'Must be a string!' }
 }
 
-function convertStringToDate (input: string): Result<Date>  {
+export function convertStringToDate (input: string): Result<Date>  {
   if (input === 'today') return { isSuccess: true, value: new Date() }
   else return { isSuccess: false, errorMessage: 'Must be a string!' }
 }
