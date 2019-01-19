@@ -17,4 +17,5 @@ twoTypes.push(1);
 
 //tuple
 const student: [string, number] = ["Gary", 787878];
+student[2] = 5;
 const rgbColor: RgbColor = [0, 1, 1];
