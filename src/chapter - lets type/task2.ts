@@ -1,4 +1,6 @@
-{
+type Payment = any;
+
+const payment = {
   "object": "list",
   "url": "/v1/customers",
   "has_more": false,
